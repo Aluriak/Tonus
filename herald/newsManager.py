@@ -51,8 +51,10 @@ def getNews(urls = [], lastFeed = []):
         # sauvegarde des nouveaux items
         result = {}
         for feed in feeds:
-                lastItem = feed[1]["items"][0]
-                result[feed[0]] = lastItem["link"]
+                try:
+                        lastItem = feed[1]["items"][0]
+                        result[feed[0]] = lastItem["link"]
+                except:         pass
         feedManager.saveFeeds(result)
 
         

@@ -15,8 +15,8 @@ except: import pickle
 #########################
 # DECLARATIONS          #
 #########################
-FILE_FEED = "save_feeds"
-FILE_URL = "save_urls"
+FILE_FEED = "herald/save_feeds"
+FILE_URL = "herald/save_urls"
 
 #########################
 # FONCTIONS             #

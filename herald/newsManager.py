@@ -28,9 +28,6 @@ def getNews(urls = [], lastFeed = []):
                 try:    feeds.append((url, feedparser.parse(url)))
                 except: print("ERROR: \""+url+"\" don't give any feed.")
 
-        #########################
-        # FONCTIONS             #
-        #########################
         # comparaison anciens/nouveaux 
         for feed in feeds:
                 iterator = 0
